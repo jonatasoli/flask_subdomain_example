@@ -10,6 +10,7 @@ packages = [{include = "flask_example"}]
 python = "^3.10"
 flask = "^2.2.2"
 python-decouple = "^3.7"
+gunicorn = "^20.1.0"
 
 
 [tool.poetry.group.dev.dependencies]
