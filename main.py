@@ -1,12 +1,9 @@
-import locale
-
 from flask import Flask
 
 import config as default_config
 
 
 def create_app(config=None) -> Flask:
-    locale.setlocale(locale.LC_ALL, "pt_BR.UTF-8")  # set locale
     app = Flask(__name__, static_folder="../static", template_folder="../templates")
 
     if config is None:
