@@ -15,8 +15,6 @@ RUN locale-gen pt_BR.UTF-8
 
 #Copy repository
 ADD . /src
-RUN chmod 755 ./src/logs
-
 WORKDIR /src
 
 # RUN pip install -r /src/requirements.txt
