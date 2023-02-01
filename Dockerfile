@@ -17,7 +17,6 @@ RUN locale-gen pt_BR.UTF-8
 ADD . /src
 WORKDIR /src
 
-# RUN pip install -r /src/requirements.txt
 RUN pip install pip --upgrade && \
     pip install -r requirements.txt
 
