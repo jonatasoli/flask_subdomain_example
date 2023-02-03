@@ -15,6 +15,21 @@ gunicorn = "^20.1.0"
 
 [tool.poetry.group.dev.dependencies]
 python-dotenv = "^0.21.1"
+radon = "^5.1.0"
+ipdb = "^0.13.11"
+eradicate = "^2.1.0"
+blue = "^0.9.1"
+isort = "^5.12.0"
+safety = "^2.3.5"
+pytest = "^7.2.1"
+pytest-sugar = "^0.9.6"
+pytest-coverage = "^0.0"
+pytest-watcher = "^0.2.6"
+pytest-mock = "^3.10.0"
+coverage = "^7.1.0"
+pytest-cov = "^4.0.0"
+ruff = "^0.0.240"
+vulture = "^2.7"
 
 [build-system]
 requires = ["poetry-core"]
