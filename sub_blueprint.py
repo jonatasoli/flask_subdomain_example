@@ -9,7 +9,7 @@ second_route = partial(second.route, host=SECOND_DOMAIN)
 
 
 
-@sub_blueprint.route('/', subdomain='subdomain')
+@sub_blueprint.route('/', subdomain='subdomain', host=FIRST_DOMAIN)
 def index():
     return 'This is a subdomain blueprint'
 
