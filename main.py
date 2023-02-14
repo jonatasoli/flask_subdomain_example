@@ -9,10 +9,10 @@ SECOND_DOMAIN = "taurusbrothers.pro"
 def create_app(config=None) -> Flask:
     app = Flask(__name__, host_matching=True, subdomain_matching=True, static_folder='static', static_host=FIRST_DOMAIN)
 
-    if config is None:
-        config = default_config
+    # if config is None:
+    #     config = default_config
 
-    app.config.from_object(config)
+    # app.config.from_object(config)
 
     # Blueprints and API Namespaces
     from root_blueprint import main_blueprint
