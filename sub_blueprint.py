@@ -16,4 +16,4 @@ def index():
 
 @second_route('/')
 def second_index():
-    return redirect(f'https://angelica.{FIRST_DOMAIN}')
+    return redirect(f'http://angelica.{FIRST_DOMAIN}')
